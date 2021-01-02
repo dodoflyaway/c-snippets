@@ -3,7 +3,7 @@
 #include<stdlib.h>
 int main()
 {
-	int x,j;
+	int x;
 	printf("enter a number to find the lenght of \n");
 	scanf("%d",&x);
 	int len = 0;// to store the leght of the number
@@ -11,22 +11,21 @@ int main()
 	while(loop_flag!=1)
 	{
 		
-		x = x/10;  //  30 = 32/10
-		printf("%d\n",x);
+	    x = x/10;  
 	    if(x==0)
 	    {
 	    	
 	    	loop_flag = 1;
 	    	
-		}
+	    }
 		
-		len++;
+	    len++;
 		
 		
 	} 
 	
-    printf("len is %d\n",len);
-    return 0;
+      printf("len is %d\n",len);
+      return 0;
 	
 	
 }
